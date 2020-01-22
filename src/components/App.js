@@ -18,8 +18,7 @@ class App extends Component {
       this.props.add_reminder(this.state.text);
   }
   delete_reminder(id){
-      console.log("deleting in app by id", id)
-      console.log("this.props", this.props)
+    this.props.delete_reminder(id);
   }
   
 
